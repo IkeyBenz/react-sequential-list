@@ -1,15 +1,16 @@
 import React from "react";
 
-export type PunchListItem = React.ReactElement<{ onComplete(): void }>;
-interface PunchListProps {
-  children: PunchListItem[];
+export type SequentialListItem = React.ReactElement<{ onComplete(): void }>;
+interface SequentialListProps {
+  children: SequentialListItem[];
 
   /** @default "onComplete" */
   completionCallbackName?: string;
 }
 
-/** PunchList
- * Renders a task queue with completed tasks and the current in progress task.
+/** SequentialList
+ * Renders a list of items one at a time until they call their onComplete callback.
+ * This callback name can be specified using the optional prop `completionCallbackName`
  *
  * Children of this list are expected to contain an 'onComplete' callback method
  * that is expected to be called when this task is considered 'complete'
@@ -18,7 +19,7 @@ interface PunchListProps {
  * the next in progress task. It will go through and render each task one by one
  * as they complete.
  */
-const PunchList: React.FC<PunchListProps> = ({
+const SequentialList: React.FC<SequentialListProps> = ({
   children,
   completionCallbackName = "onComplete",
 }) => {
@@ -45,4 +46,4 @@ const PunchList: React.FC<PunchListProps> = ({
   );
 };
 
-export default PunchList;
+export default SequentialList;

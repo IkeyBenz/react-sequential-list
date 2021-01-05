@@ -1,6 +1,6 @@
 {
   "name": "react-sequential-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component that wraps children and only renders them one at a time until a given completion callback has been called by them",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",

@@ -8,7 +8,10 @@
     "dist/*"
   ],
   "repository": "git@github.com:IkeyBenz/react-sequential-list.git",
-  "author": "Isaac J. Benzaken",
+  "author": {
+    "name": "Isaac J. Benzaken",
+    "email": "ikey.benz@gmail.com"
+  },
   "license": "MIT",
   "private": false,
   "dependencies": {
@@ -17,6 +20,8 @@
     "typescript": "^4.1.3"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "predeploy": "npm build",
+    "deploy": "npm publish"
   }
 }

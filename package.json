@@ -22,6 +22,6 @@
   "scripts": {
     "build": "tsc",
     "predeploy": "npm build",
-    "deploy": "npm publish"
+    "deploy": "npm publish --access public"
   }
 }

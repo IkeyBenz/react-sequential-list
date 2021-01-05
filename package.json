@@ -2,12 +2,13 @@
   "name": "react-sequential-list",
   "version": "1.0.0",
   "description": "A React component that wraps children and only renders them one at a time until a given completion callback has been called by them",
-  "main": "index.js",
+  "main": "dist/index.js",
   "repository": "https://github.com/IkeyBenz/react-sequential-list.git",
   "author": "Isaac J. Benzaken",
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "@types/react": "^17.0.0",
     "react": "^17.0.1"
   }
 }

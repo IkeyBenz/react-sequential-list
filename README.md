@@ -57,3 +57,26 @@ export default App;
 
 # Result
 ![](Result.gif)
+
+
+# Use Cases
+Say you have a list of images, and you want them to load one by one in order for performance reasons, you can use SequentialList to accomplish this!
+
+Set the `completionCallbackName` prop of `SequentialList` to match the name of the callback that the `<img />` component calls when it finishes loading, in this case: `onLoad`.
+```tsx
+/** ProgressiveImageList
+ * Displays the child images one by one until all of them are loaded in sequential order
+*/
+function ProgressiveImageList() {
+  return (
+    <SequentialList completionCallbackName="onLoad">
+      <img src="insert random source" alt="random alt">
+      <img src="insert random source" alt="random alt">
+      <img src="insert random source" alt="random alt">
+      <img src="insert random source" alt="random alt">
+      <img src="insert random source" alt="random alt">
+      <img src="insert random source" alt="random alt">
+    </SequentialList>
+  )
+} 
+```

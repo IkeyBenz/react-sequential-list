@@ -7,6 +7,15 @@
   "files": [
     "dist/*"
   ],
+  "keywords": [
+    "react",
+    "sequential",
+    "list",
+    "one",
+    "at",
+    "a",
+    "time"
+  ],
   "repository": "git@github.com:IkeyBenz/react-sequential-list.git",
   "author": {
     "name": "Isaac J. Benzaken",
